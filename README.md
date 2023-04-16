@@ -1,3 +1,18 @@
+# Solution to Frontend Mentor Challenge
+
+This is my solution to the Age calculator app i use React
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
