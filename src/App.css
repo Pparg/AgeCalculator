@@ -1,6 +1,6 @@
 *{
-    box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Poppins;
+    font-weight: 400i, 700, 800i;
 }
 body{
     background-color: rgba(211, 211, 211, 0.616);
@@ -16,12 +16,15 @@ body{
 #container{
     background-color: rgb(255, 255, 255);
     width: 70vw;
-    height: 60vh;
+    height: 66vh;
     border-radius: 15px 15px 100px 15px ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: 400;
+    font-style: italic;
+
 }
 #dateForm{
     width: 90%;
@@ -56,7 +59,8 @@ body{
     border-radius: 6px;
     border: 1px solid rgba(118, 117, 117, 0.616) ;
     color: rgb(90, 87, 87);
-    font-size: larger;
+    font-size: 28px;
+
 }
 .divform .input_field:focus{
     background-color: rgb(255, 255, 255);
@@ -91,7 +95,7 @@ body{
     border: 1px solid rgba(118, 117, 117, 0.616) ;
 }
 #submit{
-    width: 10%;
+    width: 15%;
     height: 100%;
     border: 1px solid transparent;
     background-color: rgb(100, 44, 241);
@@ -135,4 +139,74 @@ body{
 }
 .element h1{
     font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+}
+@media screen and ( 800px<width< 1000px) {
+   #submit{
+    width: 15%;
+   }  
+}
+
+@media screen and (600px<width<800px) { 
+    .ligne{
+        width: 100%;
+    }
+    .possible_ligne{
+        width: 100%;
+        border: 1px solid rgba(118, 117, 117, 0.616) ;
+    }
+    #submit{
+        width: 35%;
+    }
+    .text_ligne_container{
+        width: 15%;
+    }
+    
+}
+@media screen and (width<600px) {
+    .element h1{
+        font-size: 40px;
+    }
+    .ligne{
+        width: 100%;
+    }
+    .possible_ligne{
+        width: 100%;
+        border: 1px solid rgba(118, 117, 117, 0.616) ;
+    }
+    #submit{
+        width: 35%;
+    }
+    .text_ligne_container{
+        width: 15%;
+    }
+    .divform .input_field{
+        font-size: 20px;
+    }
+}
+@media screen and (width<400px) {
+    .element h1{
+        font-size: 30px;
+    }
+    .ligne{
+        width: 100%;
+    }
+    .possible_ligne{
+        width: 100%;
+        border: 1px solid rgba(118, 117, 117, 0.616) ;
+    }
+    #submit{
+        width: 45%;
+    }
+    .text_ligne_container{
+        width: 25%;
+    }
+    .divform .input_field{
+        font-size: 15px;
+    }
+    #container{
+        height: 50vh;
+    }
+    
 }
